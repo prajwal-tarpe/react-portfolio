@@ -18,7 +18,6 @@ function Theme() {
     if(theme==='light') setDarkMode()
     else setLightMode()
   }
-  console.log(theme);
 
   return (
     <button

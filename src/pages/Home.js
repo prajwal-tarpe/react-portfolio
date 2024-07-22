@@ -22,7 +22,7 @@ function Home() {
       </div>
       <div className='flex flex-col justify-center items-center flex-grow mt-20 md:mt-8'>
         <p className='text-xl sm:text-2xl font-semibold mb-2 text-center'>Hello, I am</p>
-        <h1 className={`text-3xl sm:text-4xl lg:text-5xl ${theme === 'dark' ? 'text-white' : 'text-blue-500'} font-bold mb-4 text-center`}>Prajwal Tarpe</h1>
+        <h1 className={`text-3xl sm:text-4xl lg:text-5xl ${theme === 'dark' ? 'text-white' : 'text-blue-600'} font-bold mb-4 text-center`}>Prajwal Tarpe</h1>
         <div className='text-lg sm:text-xl font-semibold mb-4 text-center'>
           And I'm a <span className={theme === 'dark' ? 'text-customBlue' : 'text-blue-500'}><span>{text}</span><Cursor /></span>
         </div>

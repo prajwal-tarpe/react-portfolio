@@ -17,7 +17,7 @@ function About() {
       </div>
       <div className={`max-w-3xl text-xl font-semibold leading-relaxed border-3 p-8 rounded-md ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-800'}`}>
         <p>
-          Hi, I'm Prajwal Tarpe, a final-year Computer Science Engineering student at Prof. Ram Meghe Institute of Technology & Research, Badnera, Amravati. I'm deeply passionate about <span className={theme === 'dark' ? 'text-customBlue' : 'text-blue-700'}>Full Stack Development</span>, blending strong theoretical knowledge with practical skills in <span className={theme === 'dark' ? 'text-customBlue' : 'text-blue-700'}>Data Structures and Algorithms</span>.
+          Hi, I'm Prajwal Tarpe, a final-year IT ( Information Techonology ) student at Prof. Ram Meghe Institute of Technology & Research, Badnera, Amravati. I'm deeply passionate about <span className={theme === 'dark' ? 'text-customBlue' : 'text-blue-700'}>Full Stack Development</span>, blending strong theoretical knowledge with practical skills in <span className={theme === 'dark' ? 'text-customBlue' : 'text-blue-700'}>Data Structures and Algorithms</span>.
         </p>
         <p className='mt-4'>
           I thrive on creating innovative applications and am excited to contribute to the dynamic world of software development. Let's collaborate and create something extraordinary together!

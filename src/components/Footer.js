@@ -20,8 +20,12 @@ function Footer() {
           <NavLink
             key={tab.path}
             to={tab.path}
-            className={`text-lg font-semibold py-2 px-4 rounded transition-colors duration-300 ${theme === 'dark' ? 'hover:text-white hover:bg-gray-700' : 'hover:text-blue-500 hover:bg-gray-200'}`}
-            activeClassName={`bg-${theme === 'dark' ? 'gray-700 text-white' : 'gray-200'}`}
+            className={({ isActive }) => `
+              text-lg font-semibold py-2 px-4 rounded transition-colors duration-300 
+              ${theme === 'dark' ? 
+                `${isActive ? 'bg-gray-700 text-white' : 'hover:text-white hover:bg-gray-700'}` : 
+                `${isActive ? 'bg-gray-200 text-blue-500' : 'hover:text-blue-500 hover:bg-gray-200'}`
+              }`}
           >
             {tab.name}
           </NavLink>

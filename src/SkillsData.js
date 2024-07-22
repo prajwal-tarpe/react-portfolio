@@ -2,27 +2,27 @@ export const skillsData = [
     {
         id: 1,
         name: 'C++',
-        image: 'https://abhishekraut.vercel.app/assets/c++.png'
+        image: '/cpp.png'
     },
     {
         id:3,
         name: 'HTML',
-        image: 'https://abhishekraut.vercel.app/assets/html.png'
+        image: '/html.png'
     },
     {
         id:4,
         name: 'CSS',
-        image: 'https://abhishekraut.vercel.app/assets/css.png'
+        image: '/css.png'
     },
     {
         id:5,
         name: 'javascript',
-        image: 'https://abhishekraut.vercel.app/assets/javascript.png'
+        image: '/js.png'
     },
     {
         id:6,
         name: 'React',
-        image: 'https://abhishekraut.vercel.app/assets/reactjs.png'
+        image: '/reactjs.png'
     },
     {
         id:7,
@@ -32,6 +32,11 @@ export const skillsData = [
     {
         id:8,
         name: 'SQL',
-        image: 'https://abhishekraut.vercel.app/assets/sql.png'
+        image: '/SQL-logo.png'
     },
+    {
+        id:9,
+        name: 'Git',
+        image: '/Git-Icon.png'
+    }
 ]

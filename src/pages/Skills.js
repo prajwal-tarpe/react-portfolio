@@ -1,11 +1,29 @@
 import React from 'react';
-import { Arrow, Skill, skillsData } from '../components';
+import { Arrow, Skill, skillsData} from '../components';
 import { NavLink } from 'react-router-dom';
 import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
 import { useThemeContext } from '../context/ThemeContext';
 
 function Skills() {
   const { theme } = useThemeContext();
+
+  const problemSolvingData = [
+    {
+      name: 'Leetcode',
+      image: '/Leetcode.webp',
+      path: 'https://leetcode.com/u/CodeQuester_23/'
+    },
+    {
+      name: 'GFG',
+      image: '/gfg.png',
+      path: 'https://www.geeksforgeeks.org/user/prajwalhx8n/'
+    },
+    {
+      name: 'HackerRank',
+      image: '/hackerRank.webp',
+      path: 'https://leetcode.com/u/CodeQuester_23/'
+    }
+  ]
 
   return (
     <div className={` min-h-screen flex flex-col justify-center items-center p-4 ${theme === 'light' ? 'bg-white' : 'bg-gray-900'}`}>
@@ -19,6 +37,32 @@ function Skills() {
         {skillsData.map((skill) => (
           <Skill key={skill.id} name={skill.name} image={skill.image} />
         ))}
+
+        <div className='flex flex-col items-center gap-4 mt-8 w-full'>
+          <p className={`font-bold text-3xl ${theme === 'light' ? 'text-black' : 'text-white'}`}>
+            Problem Solving (DSA)
+            <p className={`${theme==='light'?'bg-gray-900':'bg-white'} h-0.5 mt-2`}></p>
+          </p>
+          <div className='flex flex-wrap justify-center gap-4'>
+            {problemSolvingData.map((platform) => (
+              <a
+                key={platform.name}
+                href={platform.path}
+                aria-label={platform.name}
+                className={`rounded-lg shadow-md transform transition-transform hover:scale-105 hover:shadow-lg p-3 m-2 ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white'}`}
+              >
+                <img
+                  src={platform.image}
+                  alt={platform.name}
+                  className='w-full h-28 rounded-lg mb-4 aspect-square object-contain'
+                />
+                <div className={`text-center font-semibold text-lg ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
+                  {platform.name}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className='flex mt-8'>
